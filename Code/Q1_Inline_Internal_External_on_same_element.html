@@ -1,0 +1,36 @@
+<!--Q1-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Q1_style.css">
+    <style>
+        .in{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="color: red">Inline</p>
+    </div>
+    <div class="in">
+        <p>Internal</p>
+    </div>
+    <div class="ex">
+        External
+    </div>
+    <div style="color: red;" class="in">
+        <p>Inline + Internal</p>
+    </div>
+    <div class="ex in">
+        <p>Internal + External</p>
+    </div>
+    <div style=" color: red" class="ex in">
+        <p>Inline + Internal + External</p>
+    </div>
+</body>
+<!-- Inline > Internal > External -->
+</html>

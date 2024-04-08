@@ -1,0 +1,116 @@
+<!-- Q2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bem{
+            color: brown;
+            font-family: 'Calibri';
+            font-weight: bolder;
+        }
+        .block{
+            border: 1px solid;
+            padding-left: 3px;
+            padding-right: 3px;
+            background-color: #e0a4f7;
+        }
+        .block__heading{
+            color: black;
+            font-weight: bold;
+        }
+        .block__naming{
+            color: #0848a3;
+        }
+        .block__example {
+            color: rgba(233, 40, 40, 0.988);
+        }
+        .element{
+            border: 1px solid;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin-top: 30px;
+            background-color: #a4cbf7;
+        }
+        .element__heading{
+            color: black;
+            font-weight: bold;
+        }
+        .element__naming{
+            color: #24a308;
+        }
+        .element__example {
+            color: rgb(255, 115, 34);
+        }
+        .modifier{
+            border: 1px solid;
+            padding-left: 3px;
+            padding-right: 3px;
+            margin-top: 30px;
+            background-color: #9beae5;
+        }
+        .modifier__heading{
+            color: black;
+            font-weight: bold;
+        }
+        .modifier__naming{
+            color: #b49222;
+        }
+        .modifier__example {
+            color: rgb(187, 43, 93);
+        }
+        .button {
+            margin-top: 30px;
+            font-family: 'Times New Roman';
+            font-weight: bolder;
+            font-size: 16px;
+        }
+        .button button:hover {
+            /* Hover effect */
+            background-color: #079233; /* Blue background */
+            color: #ffffff; /* White text color */
+        }
+        .button--primary{
+            color: rgb(101, 151, 25);
+            background-color: lightgoldenrodyellow;
+            border-radius: 6px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <header class="bem">
+        <h2 class="bem__heading-main">BEM Naming convention</h2>
+    </header>
+    <section class="block"> 
+        <h3 class="block__heading">Block: </h3>
+        <p class="block__naming">A standalone component or module that has a meaningful purpose and can be reused across the website. Block names should be descriptive and represent the main purpose of the component.</p>
+        <p class="block__example">Example: .button { } </p>
+    </section>
+
+    <section class="element">
+        <h3 class="element__heading">Element: </h3>
+        <p class="element__naming">Parts of a block that have no meaning or purpose on their own and are semantically tied to the block. Element names are separated from the block name by a double underscore __.</p>
+        <p class="element__example">Example: .button__text  <br>
+            .navbar__link  <br>
+            .card__image { }
+        </p>
+    </section>
+
+    <section class="modifier">
+        <h3 class="modifier__heading">Modifier: </h3>
+        <p class="modifier__naming">Variants or states of a block or element that alter its appearance, behavior, or state. Modifier names are separated from the block or element name by a double hyphen --.</p>
+        <p class="modifier__example">Example: .button--primary { } <br>
+            .navbar__link--active { } <br>
+            .card__image--rounded { }</p>
+    </section>
+
+    <div class="button">
+    <button type="button" class="button button--primary">Understood</button>
+    </div>
+</body>
+</html>

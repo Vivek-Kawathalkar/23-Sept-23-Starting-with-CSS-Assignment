@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstname{
+            background-color: greenyellow;
+            height: 14px;
+            width: 30%;
+            margin: 5px;
+            margin-top: 0px;
+            padding: 1.3px;
+        }
+        .lastname{
+            background-color: rgb(91, 255, 91);
+            height: 14px;
+            width: 30%;
+            margin: 5px;
+            margin-top: 0px;
+        }
+        .email{
+            background-color: rgb(122, 243, 201);
+            height: 14px;
+            width: 30%;
+            margin: 5px;
+            margin-top: 0px;
+        }
+        .password{
+            background-color: rgb(122, 213, 243);
+            height: 14px;
+            width: 30%;
+            margin: 5px;
+            margin-top: 0px;
+        }
+        .confirmpassword{
+            background-color: rgb(131, 177, 230);
+            height: 14px;
+            width: 30%;
+            margin: 5px;
+            margin-top: 0px;
+        }
+        .male{
+            color: red;
+        }
+        .female{
+            color: pink;
+        }
+        .checkbox{
+            background-color: brown;
+        }
+        .button{
+            border-radius: 5px;
+            background-color: rgb(213, 83, 83 );
+            opacity: 70%;
+        }
+        .button--primary{
+            color: azure;
+            font-weight: bold;
+            opacity: 70%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="firstname">First Name:
+            <input type="text" id="firstname" class="firstname" placeholder="abc" required min="3" max="10">
+        </label>
+        <br>
+        <label for="lastname">Last Name:
+            <input type="text" id="lastname" class="lastname" placeholder="xyz" required min="3" max="10">
+        </label>
+        <br>
+        <label for="email">Email:
+            <input type="email" id="email" class="email" placeholder="abc@p.com" required>
+        </label>
+        <br>
+        <label for="password">Password:
+            <input type="password" id="password" class="password" placeholder="********" required min="8">
+        </label>
+        <br>
+        <label for="confirmpassword">Confirm Password:
+            <input type="password" id="confirmpassword" class="confirmpassword" placeholder="********" required min="8">
+        </label>
+        <br>
+        <label for="">Gender:</label>
+        <input type="radio" id="male" name="Gender" value="male" >
+        <label for="male" class="male">male</label>
+        <input type="radio" id="female" name="Gender" value="female" >
+        <label for="female" class="female">Female</label>
+        <p><input type="checkbox" required class="checkbox">I agree to <a href="#">term & conditions</a></p>
+        <button type="submit" class="button button--primary">submit</button>
+    </form>
+</body>
+</html>
